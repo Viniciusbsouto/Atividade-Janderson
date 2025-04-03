@@ -1,0 +1,11 @@
+{
+  "java.project.referencedLibraries": [
+      "lib/*.jar"
+  ],
+  "java.test.config": {
+      "vmArgs": ["-ea"],
+      "workingDirectory": "${workspaceFolder}"
+  },
+  "java.test.defaultConfig": "junit",
+  "java.test.suiteName": "JUnit"
+}
