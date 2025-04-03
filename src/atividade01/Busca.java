@@ -6,7 +6,7 @@ public class Busca implements Busca_IF {
     public int[] geraVetorNumericoOrdenado(int tamanho) {
         int[] vetor = new int[tamanho];
         for (int i = 0; i < tamanho; i++) {
-            vetor[i] = i + 1; // Gera vetor ordenado de 1 a tamanho
+            vetor[i] = i + 1;
         }
         return vetor;
     }
