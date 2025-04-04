@@ -70,32 +70,12 @@ public class Ordenacao implements Ordenacao_IF {
 
     @Override
     public long selectionSort(int[] numeros) {
-        long startTime = System.nanoTime();
-        for (int i = 0; i < numeros.length - 1; i++) {
-            int minIdx = i;
-            for (int j = i + 1; j < numeros.length; j++) {
-                if (numeros[j] < numeros[minIdx])
-                    minIdx = j;
-            }
-            if (minIdx != i)
-                troca(numeros, i, minIdx);
-        }
-        return System.nanoTime() - startTime;
+        return -1;
     }
 
     @Override
     public long insertionSort(int[] numeros) {
-        long startTime = System.nanoTime();
-        for (int i = 1; i < numeros.length; i++) {
-            int key = numeros[i];
-            int j = i - 1;
-            while (j >= 0 && numeros[j] > key) {
-                numeros[j + 1] = numeros[j];
-                j--;
-            }
-            numeros[j + 1] = key;
-        }
-        return System.nanoTime() - startTime;
+        return -1;
     }
 
     @Override
